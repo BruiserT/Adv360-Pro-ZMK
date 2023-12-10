@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1     &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
- &kp LSHFT      &kp Q      &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P  &kp RSHFT
-   &kp ESC      &kp A      &kp S     &kp D      &kp F   &kp G               &none  &kp HOME    &kp END                   &kp LGUI    &kp TAB      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
-  &kp CAPS      &kp Z      &kp X     &kp C      &kp V   &kp B                                 &kp LALT                   &kp RALT                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH   &kp BSLH
-     &mo 2  &kp GRAVE  &kp TILDE  &kp LEFT  &kp RIGHT                    &kp BSPC   &kp DEL  &kp LCTRL                  &kp RCTRL  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+ &kp EQUAL     &kp N1     &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+ &kp LSHFT      &kp Q      &kp W     &kp E      &kp R   &kp T               &none                                                                &none   &kp Y   &kp U      &kp I     &kp O     &kp P  &kp RSHFT
+   &kp ESC      &kp A      &kp S     &kp D      &kp F   &kp G               &none  &kp TAB   &kp HOME                    &kp END   &kp LGUI      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+  &kp CAPS      &kp Z      &kp X     &kp C      &kp V   &kp B                                &kp LALT                   &kp RALT                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH   &kp BSLH
+     &mo 2  &kp GRAVE  &kp TILDE  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DEL  &kp LCTRL                  &kp RCTRL  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
@@ -75,6 +75,16 @@
   &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+            >;
+        };
+
+        layer_Colemak_DH {
+            bindings = <
+         &trans  &trans  &trans  &trans  &trans  &trans              &tog 1                                                                         &tog 3  &trans  &trans     &trans      &trans         &trans          &trans
+ &kp LEFT_SHIFT   &kp Q   &kp W   &kp F   &kp P   &kp B              &trans                                                                         &trans   &kp J   &kp L      &kp U       &kp Y  &kp SEMICOLON  &kp LEFT_SHIFT
+        &kp ESC   &kp A   &kp R   &kp S   &kp T   &kp G              &trans     &kp TAB      &kp HOME                        &kp END   &kp LGUI     &trans   &kp H   &kp N      &kp E       &kp I          &kp O          &trans
+          &none   &kp Z   &kp X   &kp C   &kp D   &kp V                                  &kp LEFT_ALT                  &kp RIGHT_ALT                         &kp K   &kp H  &kp COMMA  &kp PERIOD       &kp FSLH          &trans
+         &trans  &trans  &trans  &trans  &trans                    &kp BSPC  &kp DELETE     &kp LCTRL                      &kp RCTRL  &kp ENTER  &kp SPACE          &trans     &trans      &trans         &trans          &trans
             >;
         };
 
